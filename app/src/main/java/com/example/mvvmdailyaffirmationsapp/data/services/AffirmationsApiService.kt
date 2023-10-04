@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface AffirmationsApiService {
 
     @GET("")
-    suspend fun getAffirmations() : Response<Affirmations>
+    suspend fun getAffirmations() : ApiResponse<Affirmations>
 }
