@@ -9,9 +9,9 @@ import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)
-interface AppModule {
+object AppModule {
 
-    fun provideAffirmationRepository(apiService: AffirmationsApiService): AffirmationRepository {
+    fun provideAffirmationRepository(apiService: AffirmationsApiService): AffirmationRepositoryImpl {
         return AffirmationRepositoryImpl(apiService)
     }
 }

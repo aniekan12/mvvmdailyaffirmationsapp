@@ -1,5 +1,5 @@
 package com.example.mvvmdailyaffirmationsapp.data.repository
 
-interface AffirmationRepository {
+interface AffirmationRepository  {
     suspend fun getAffirmations()
 }

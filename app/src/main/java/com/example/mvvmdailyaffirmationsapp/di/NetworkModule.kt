@@ -14,7 +14,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-interface NetworkModule {
+object NetworkModule {
     private val baseUrl: String
         get() = "https://www.affirmations.dev"
 
